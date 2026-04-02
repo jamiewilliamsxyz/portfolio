@@ -6,11 +6,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action( 'wp_enqueue_scripts', 'jpt_enqueue_scripts' );
 
 function jpt_enqueue_scripts() {
-	$version = wp_get_theme()->get( 'Version' );
+	$version      = wp_get_theme()->get( 'Version' );
+	$template_uri = get_template_directory_uri();
 
 	wp_enqueue_style(
 		'jpt-style-css',
 		get_stylesheet_uri(),
+		array(),
+		$version
+	);
+
+	wp_enqueue_style(
+		'jpt-main-css',
+		$template_uri . '/assets/css/main.css',
 		array(),
 		$version
 	);
