@@ -8,7 +8,10 @@
 <body <?php body_class(); ?>>
 	<header>
 		<div>
-			<img />
+			<?php if ( has_custom_logo() ) : ?>
+				<div><?php the_custom_logo(); ?></div>
+			<?php endif; ?>
+			
 			<h1><?php bloginfo( 'name' ); ?></h1>
 		</div>
 		
