@@ -18,6 +18,15 @@
 		<h2><?php bloginfo( 'description' ); ?></h2>
 			
 		<nav>
-			
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'jpt-header-menu',
+					'menu_class'     => 'jpt-header-menu',
+					'fallback_cb'    => false,
+					'container'      => false,
+				)
+			)
+			?>
 		</nav>
 	</header>
