@@ -14,4 +14,11 @@ function jpt_enqueue_scripts() {
 		array(),
 		$version
 	);
+
+	wp_enqueue_style(
+		'jpt-google-fonts',
+		'https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap',
+		array(),
+		null
+	);
 }
