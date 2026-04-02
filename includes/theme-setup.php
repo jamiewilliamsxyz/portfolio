@@ -6,6 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action( 'after_setup_theme', 'jpt_setup_theme' );
 
 function jpt_setup_theme() {
+	// Add Theme Support
 	add_theme_support( 'menus' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
@@ -16,6 +17,13 @@ function jpt_setup_theme() {
 			'width'                => 102,
 			'flex-width'           => true,
 			'unlink-homepage-logo' => true,
+		)
+	);
+
+	// Register Menu
+	register_nav_menus(
+		array(
+			'jpt-header-menu' => 'Header Menu Location',
 		)
 	);
 }
