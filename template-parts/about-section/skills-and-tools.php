@@ -1,7 +1,7 @@
 <?php $skills = jpt_get_about_data( 'skills-and-tools' ); ?>
 
 <div>
-	<h3>Skills & Tools</h3>
+	<h4>Skills & Tools</h4>
 
 	<div>
 		<?php foreach ( $skills as $skill ) : ?>

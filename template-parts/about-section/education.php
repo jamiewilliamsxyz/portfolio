@@ -1,7 +1,7 @@
 <?php $education = jpt_get_about_data( 'education' ); ?>
 
 <div>
-	<h3>Certifications</h3>
+	<h4>Certifications</h4>
 
 	<?php foreach ( $education as $item ) : ?>
 		<div>

@@ -1,7 +1,7 @@
 <?php $past_work = jpt_get_about_data( 'past-work' ); ?>
 
 <div>
-	<h3>Past Work</h3>
+	<h4>Past Work</h4>
 
 	<?php foreach ( $past_work['items'] as $item ) : ?>
 		<div>

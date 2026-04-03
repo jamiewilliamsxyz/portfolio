@@ -1,7 +1,7 @@
 <?php $my_story = jpt_get_about_data( 'my-story' ); ?>
 
 <div>
-	<h3>My Story</h3>
+	<h4>My Story</h4>
 	
 	<div>
 		<?php foreach ( $my_story as $paragraph ) : ?>
