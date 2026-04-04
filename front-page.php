@@ -16,6 +16,8 @@
 		</div>
 	</section>
 
+	<hr />
+
 	<section>
 		<h3>Projects ✨</h3>
 		

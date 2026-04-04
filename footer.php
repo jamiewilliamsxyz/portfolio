@@ -1,3 +1,4 @@
+		<hr />
 		<footer>
 			<?php if ( ! is_404() ) : ?>
 				<a href="#jpt-header">↑ Return to top</a>
