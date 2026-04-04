@@ -17,7 +17,8 @@
 	</section>
 
 	<section>
-
+		<h3>Projects ✨</h3>
+		
 	</section>
 </main>
 
