@@ -96,7 +96,7 @@ function jpt_add_fields() {
 					array(
 						'param'    => 'post_type',
 						'operator' => '==',
-						'value'    => 'jpt-project',
+						'value'    => 'jpt_project',
 					),
 				),
 			),

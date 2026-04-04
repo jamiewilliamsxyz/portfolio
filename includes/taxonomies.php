@@ -9,7 +9,7 @@ function jpt_register_taxonomies() {
 	register_taxonomy(
 		'jpt_technology',
 		array(
-			0 => 'jpt-project',
+			0 => 'jpt_project',
 		),
 		array(
 			'labels'            => array(
