@@ -1,7 +1,7 @@
 		<hr />
 		<footer>
 			<?php if ( ! is_404() ) : ?>
-				<a href="#jpt-header">↑ Return to top</a>
+				<a href="#top">↑ Return to top</a>
 			<?php endif; ?>
 			
 			<p>jamiewilliams.me</p>
