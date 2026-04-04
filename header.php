@@ -6,7 +6,7 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<header id="jpt-header">
+	<header id="top">
 		<div>
 			<?php if ( has_custom_logo() ) : ?>
 				<div><?php the_custom_logo(); ?></div>
