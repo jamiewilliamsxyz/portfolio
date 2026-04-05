@@ -57,12 +57,12 @@ $thumb_alt    = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
 						Live Site ↗
 					</a>
 				<?php endif; ?>
-				
+
 				<!-- Required field. No need to conditionally render link or links section -->
 				<a href="<?php echo esc_url( $github_url ); ?>" target="_blank" rel="noopener">
 					GitHub ↗
 				</a>
-				
+
 				<?php if ( $github_url_2 ) : ?>
 					<a href="<?php echo esc_url( $github_url_2 ); ?>" target="_blank" rel="noopener">
 						GitHub 2 ↗
