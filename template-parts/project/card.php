@@ -3,7 +3,7 @@ $date       = get_field( 'jpt_date' );
 $tech_stack = get_the_terms( get_the_ID(), 'jpt_technology' );
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="<?php post_class( 'jpt-card' ); ?>">
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'jpt-card' ); ?>>
 	<div>
 		<h5><?php the_title(); ?></h5>
 
