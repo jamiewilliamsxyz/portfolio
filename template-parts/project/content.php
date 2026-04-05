@@ -10,7 +10,7 @@ $thumb_url    = get_the_post_thumbnail_url( $thumb_id, 'full' );
 $thumb_alt    = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="<?php post_class( 'jpt-post' ); ?>">
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'jpt-post' ); ?>>
 	<section>
 		<div>
 			<h3><?php the_title(); ?></h3>
