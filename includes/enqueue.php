@@ -29,4 +29,31 @@ function jpt_enqueue_scripts() {
 		array(),
 		null
 	);
+
+	if ( is_front_page() ) {
+		wp_enqueue_style(
+			'jpt-front-page-css',
+			$template_uri . 'assets/css/pages/front-page.css',
+			array(),
+			$version
+		);
+	}
+
+	if ( is_single() ) {
+		wp_enqueue_style(
+			'jpt-single-css',
+			$template_uri . 'assets/css/pages/single.css',
+			array(),
+			$version
+		);
+	}
+
+	if ( is_404() ) {
+		wp_enqueue_style(
+			'jpt-404-css',
+			$template_uri . 'assets/css/pages/404.css',
+			array(),
+			$version
+		);
+	}
 }

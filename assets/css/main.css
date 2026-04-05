@@ -1,2 +1,8 @@
+/* Base */
 @import "base/global.css";
 @import "base/variables.css";
+@import "base/typography.css";
+
+/* Layout */
+@import "layout/header.css";
+@import "layout/footer.css";
