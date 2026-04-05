@@ -5,7 +5,7 @@
 
 	<?php foreach ( $certifications['items'] as $certification ) : ?>
 		<div>
-			<a href="<?php echo esc_url( $certification['link'] ); ?>">
+			<a href="<?php echo esc_url( $certification['link'] ); ?>" target="_blank" rel="noopener">
 				<p><?php echo esc_html( $certification['title'] ); ?></p>
 			</a>
 
@@ -13,7 +13,7 @@
 		</div>
 	<?php endforeach; ?>
 
-	<a href="<?php echo esc_url( $certifications['link']['href'] ); ?>">
+	<a href="<?php echo esc_url( $certifications['link']['href'] ); ?>" target="_blank" rel="noopener" >
 		<?php echo esc_html( $certifications['link']['text'] ); ?>
 	</a>
 </div>

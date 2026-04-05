@@ -5,7 +5,7 @@
 
 	<?php foreach ( $education as $item ) : ?>
 		<div>
-			<a href="<?php echo esc_url( $item['link'] ); ?>">
+			<a href="<?php echo esc_url( $item['link'] ); ?>" target="_blank" rel="noopener" >
 				<p><?php echo esc_html( $item['title'] ); ?></p>
 			</a>
 

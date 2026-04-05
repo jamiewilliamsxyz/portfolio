@@ -10,7 +10,7 @@
 		</div>
 	<?php endforeach; ?>
 
-	<a href="<?php echo esc_url( $past_work['link']['href'] ); ?>">
+	<a href="<?php echo esc_url( $past_work['link']['href'] ); ?>" target="_blank" rel="noopener" >
 		<?php echo esc_html( $past_work['link']['text'] ); ?>
 	</a>
 </div>
