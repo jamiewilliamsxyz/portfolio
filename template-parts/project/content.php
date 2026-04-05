@@ -13,7 +13,7 @@ $thumb_alt    = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'jpt-post' ); ?>>
 	<section>
 		<div>
-			<h3><?php the_title(); ?></h3>
+			<h1><?php the_title(); ?></h1>
 
 			<?php if ( $date ) : ?>
 				<p><?php echo esc_html( $date ); ?></p>
@@ -30,7 +30,7 @@ $thumb_alt    = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
 
 		<div>
 			<div>
-				<h4>Description</h4>
+				<h2>Description</h2>
 				<p><?php the_excerpt(); ?></p>
 			</div>
 
@@ -38,7 +38,7 @@ $thumb_alt    = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
 			if ( ! is_wp_error( $tech_stack ) && ! empty( $tech_stack ) ) :
 				?>
 				<div>
-					<h4>Tech Stack</h4>
+					<h2>Tech Stack</h2>
 
 					<ul>
 						<?php foreach ( $tech_stack as $tech ) : ?>
@@ -51,7 +51,7 @@ $thumb_alt    = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
 			?>
 
 			<div>
-				<h4>Links</h4>
+				<h2>Links</h2>
 				<?php if ( $live_url ) : ?>
 					<a href="<?php echo esc_url( $live_url ); ?>" target="_blank" rel="noopener">
 						Live Site ↗

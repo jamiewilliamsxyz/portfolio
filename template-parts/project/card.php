@@ -5,7 +5,7 @@ $tech_stack = get_the_terms( get_the_ID(), 'jpt_technology' );
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'jpt-card' ); ?>>
 	<div>
-		<h5><?php the_title(); ?></h5>
+		<h3><?php the_title(); ?></h3>
 
 		<?php if ( $date ) : ?>
 			<p><?php echo esc_html( $date ); ?></p>

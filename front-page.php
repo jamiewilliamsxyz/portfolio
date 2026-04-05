@@ -11,7 +11,7 @@ $projects = new WP_Query(
 
 <main>
 	<section>
-		<h3>About Me 👨‍💻</h3>
+		<h2>About Me 👨‍💻</h2>
 
 		<div>
 			<?php get_template_part( 'template-parts/about-section/my-story' ); ?>
@@ -30,7 +30,7 @@ $projects = new WP_Query(
 	<?php if ( $projects->have_posts() ) : ?>
 		<hr />
 		<section>
-			<h3>Projects ✨</h3>
+			<h2>Projects ✨</h2>
 
 			<div>
 				<?php

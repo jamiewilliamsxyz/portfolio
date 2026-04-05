@@ -19,7 +19,7 @@
 			<?php endif; ?>
 		</div>
 
-		<h2><?php bloginfo( 'description' ); ?></h2>
+		<p><?php bloginfo( 'description' ); ?></p>
 
 		<nav>
 			<?php
