@@ -1,0 +1,14 @@
+footer {
+  padding: 2rem 0;
+  max-width: var(--jpt-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 800px) {
+  footer {
+    padding: 2rem;
+  }
+}
