@@ -15,6 +15,7 @@ $projects = new WP_Query(
 
 		<div>
 			<?php get_template_part( 'template-parts/about-section/my-story' ); ?>
+			<hr class="jpt-divider-mobile" />
 			<div>
 				<?php
 				get_template_part( 'template-parts/about-section/past-work' );
@@ -28,7 +29,6 @@ $projects = new WP_Query(
 
 	<?php if ( $projects->have_posts() ) : ?>
 		<hr />
-
 		<section>
 			<h3>Projects ✨</h3>
 
