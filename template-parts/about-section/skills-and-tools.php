@@ -1,11 +1,11 @@
-<?php $skills = jpt_get_about_data( 'skills-and-tools' ); ?>
+<?php $skills_and_tools = jpt_get_about_data( 'skills-and-tools' ); ?>
 
 <div>
 	<h4>Skills & Tools</h4>
 
-	<div>
-		<?php foreach ( $skills as $skill ) : ?>
-			<span><?php echo esc_html( $skill ); ?></span>
+	<ul>
+		<?php foreach ( $skills_and_tools as $item ) : ?>
+			<li><?php echo esc_html( $item ); ?></li>
 		<?php endforeach; ?>
-	</div>
+	</ul>
 </div>
