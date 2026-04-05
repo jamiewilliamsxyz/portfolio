@@ -10,4 +10,8 @@
 
   /* Layout */
   --jpt-max-width: 832px;
+
+  /* Fonts */
+  --jpt-font-body: "Geist", sans-serif;
+  --jpt-font-heading: "Geist Mono", monospace;
 }

@@ -4,7 +4,7 @@
 				<a href="#top">↑ Return to top</a>
 			<?php endif; ?>
 			
-			<p>jamiewilliams.me</p>
+			<p class="jpt-footer-title">jamiewilliams.me</p>
 			<p>Website designed and developed by Jamie Williams → jamie7williams@gmail.com</p>
 		</footer>
 

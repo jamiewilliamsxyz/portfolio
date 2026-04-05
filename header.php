@@ -15,7 +15,7 @@
 			<?php if ( is_front_page() ) : ?>
 				<h1><?php bloginfo( 'name' ); ?></h1>
 			<?php else : ?>
-				<p><?php bloginfo( 'name' ); ?></p>
+				<p class="jpt-header-title"><?php bloginfo( 'name' ); ?></p>
 			<?php endif; ?>
 		</div>
 
