@@ -1,0 +1,14 @@
+.jpt-page-404 {
+  justify-content: center;
+  width: 100%;
+}
+
+.jpt-content-404 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.jpt-content-404 > h1 {
+  margin-bottom: 1rem;
+}
