@@ -7,31 +7,31 @@
 </head>
 <body <?php body_class(); ?>>
 	<header id="top">
-		<div>
-			<?php if ( has_custom_logo() ) : ?>
-				<div><?php the_custom_logo(); ?></div>
-			<?php endif; ?>
+		<?php if ( has_custom_logo() ) : ?>
+			<div class="jpt-header-img-container"><?php the_custom_logo(); ?></div>
+		<?php endif; ?>
 
+		<div class="jpt-header-col">
 			<?php if ( is_front_page() ) : ?>
 				<h1><?php bloginfo( 'name' ); ?></h1>
 			<?php else : ?>
 				<p class="jpt-header-title"><?php bloginfo( 'name' ); ?></p>
 			<?php endif; ?>
-		</div>
 
-		<p><?php bloginfo( 'description' ); ?></p>
+			<p><?php bloginfo( 'description' ); ?></p>
 
-		<nav>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'jpt-header-menu',
-					'menu_class'     => 'jpt-header-menu',
-					'fallback_cb'    => false,
-					'container'      => false,
+			<nav>
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'jpt-header-menu',
+						'menu_class'     => 'jpt-header-menu',
+						'fallback_cb'    => false,
+						'container'      => false,
+					)
 				)
-			)
-			?>
-		</nav>
+				?>
+			</nav>
+		</div>
 	</header>
 	<hr />
