@@ -1,15 +1,15 @@
 <?php $certifications = jpt_get_about_data( 'certifications' ); ?>
 
-<div>
-	<h4>Certifications</h4>
+<div class="jpt-about-subsection">
+	<h3>Certifications</h3>
 
 	<?php foreach ( $certifications['items'] as $certification ) : ?>
-		<div>
+		<div class="jpt-about-subsection-content">
 			<a href="<?php echo esc_url( $certification['link'] ); ?>" target="_blank" rel="noopener">
 				<p><?php echo esc_html( $certification['title'] ); ?></p>
 			</a>
 
-			<p><?php echo esc_html( $certification['issued'] ); ?></p>
+			<p class="jpt-subtext"><?php echo esc_html( $certification['issued'] ); ?></p>
 		</div>
 	<?php endforeach; ?>
 

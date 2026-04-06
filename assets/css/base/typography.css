@@ -79,6 +79,7 @@ h3 {
 
 .jpt-footer-title {
   color: var(--jpt-colour-text);
+  font-family: var(--jpt-font-heading);
 }
 
 .wp-caption-text,

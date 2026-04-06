@@ -1,12 +1,12 @@
 <?php $past_work = jpt_get_about_data( 'past-work' ); ?>
 
-<div>
-	<h4>Past Work</h4>
+<div class="jpt-about-subsection">
+	<h3>Past Work</h3>
 
 	<?php foreach ( $past_work['items'] as $item ) : ?>
-		<div>
+		<div class="jpt-about-subsection-content">
 			<p><?php echo esc_html( $item['role'] ); ?></p>
-			<p><?php echo esc_html( $item['dates'] ); ?></p>
+			<p class="jpt-subtext"><?php echo esc_html( $item['dates'] ); ?></p>
 		</div>
 	<?php endforeach; ?>
 

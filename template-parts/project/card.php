@@ -4,11 +4,11 @@ $tech_stack = get_the_terms( get_the_ID(), 'jpt_technology' );
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'jpt-card' ); ?>>
-	<div>
+	<div class="jpt-card-title-date-container">
 		<h3><?php the_title(); ?></h3>
 
 		<?php if ( $date ) : ?>
-			<p><?php echo esc_html( $date ); ?></p>
+			<p class="jpt-subtext"><?php echo esc_html( $date ); ?></p>
 		<?php endif; ?>
 	</div>
 
@@ -21,7 +21,7 @@ $tech_stack = get_the_terms( get_the_ID(), 'jpt_technology' );
 		<?php
 		foreach ( $tech_stack as $tech ) :
 			?>
-			<li><?php echo esc_html( $tech->name ); ?></li>
+			<li class="jpt-subtext"><?php echo esc_html( $tech->name ); ?></li>
 			<?php
 			endforeach;
 		?>

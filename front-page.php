@@ -9,14 +9,14 @@ $projects = new WP_Query(
 );
 ?>
 
-<main>
+<main class="jpt-front-page">
 	<section>
 		<h2>About Me 👨‍💻</h2>
 
-		<div>
+		<div class="jpt-about-container">
 			<?php get_template_part( 'template-parts/about-section/my-story' ); ?>
 			<hr class="jpt-divider-mobile" />
-			<div>
+			<div class="jpt-about-col">
 				<?php
 				get_template_part( 'template-parts/about-section/past-work' );
 				get_template_part( 'template-parts/about-section/certifications' );
