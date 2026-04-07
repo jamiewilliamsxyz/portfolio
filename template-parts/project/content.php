@@ -17,23 +17,21 @@ $content      = get_field( 'jpt_content' );
 			<?php endif; ?>
 		</div>
 
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php
-			the_post_thumbnail(
-				'full',
-				array(
-					'class' => 'jpt-project-thumb-mobile',
-				)
-			);
-			?>
-		<?php endif; ?>
+		<?php
+		get_template_part(
+			'template-parts/project/thumbnail',
+			null,
+			array(
+				'class' => 'jpt-project-thumb-mobile',
+			)
+		);
+		?>
 
 		<div>
 			<div>
 				<h2>Description</h2>
 				<p><?php the_excerpt(); ?></p>
 			</div>
-
 
 			<?php
 			if ( ! is_wp_error( $tech_stack ) && ! empty( $tech_stack ) ) :
@@ -72,16 +70,15 @@ $content      = get_field( 'jpt_content' );
 			</div>
 		</div>
 
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php
-			the_post_thumbnail(
-				'full',
-				array(
-					'class' => 'jpt-project-thumb-desktop',
-				)
-			);
-			?>
-		<?php endif; ?>
+		<?php
+		get_template_part(
+			'template-parts/project/thumbnail',
+			null,
+			array(
+				'class' => 'jpt-project-thumb-desktop',
+			)
+		);
+		?>
 	</section>
 
 	<hr />
