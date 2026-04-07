@@ -25,7 +25,7 @@ function jpt_enqueue_scripts() {
 
 	wp_enqueue_style(
 		'jpt-google-fonts',
-		'https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap',
+		'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap',
 		array(),
 		null
 	);

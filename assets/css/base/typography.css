@@ -2,7 +2,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-size: 1rem;
+  font-size: 1.15rem;
   letter-spacing: 0.01em;
   color: var(--jpt-colour-text);
   font-family: var(--jpt-font-body);
@@ -13,7 +13,7 @@ a {
   text-decoration: none;
   color: var(--jpt-colour-link);
   transition: opacity 300ms ease;
-  font-size: 0.875rem;
+  font-size: 1.025rem;
 
   &:hover {
     opacity: 0.7;
@@ -34,10 +34,7 @@ h4 {
 
 h1,
 h2,
-.jpt-header-title,
-pre,
-code,
-kbd {
+.jpt-header-title {
   color: var(--jpt-colour-heading);
   font-family: var(--jpt-font-heading);
 }
@@ -60,7 +57,7 @@ h1,
 h1,
 .jpt-header-title,
 h2 {
-  font-size: 1.875rem;
+  font-size: 2.025rem;
 }
 
 h2,
@@ -71,7 +68,7 @@ h3,
 
 h3,
 .jpt-footer-title {
-  font-size: 1.125rem;
+  font-size: 1.275rem;
 }
 
 h3 {
@@ -93,7 +90,7 @@ h3 {
 pre,
 code,
 kbd {
-  font-size: 0.875rem;
+  font-size: 1.025rem;
 }
 
 b,
@@ -104,4 +101,15 @@ strong {
 ::selection {
   background-color: var(--jpt-colour-link);
   color: var(--jpt-colour-bg);
+}
+
+pre,
+code,
+kbd {
+  font-family: var(--jpt-font-mono);
+  color: var(--jpt-colour-subheading);
+  background-color: var(--jpt-colour-secondary-bg);
+  border-radius: 4px;
+  padding: 0.125rem 0.375rem;
+  margin: 0 0.125rem;
 }

@@ -1,6 +1,7 @@
 :root {
   /* Colours */
   --jpt-colour-bg: #fafafa;
+  --jpt-colour-secondary-bg: #e5e5e5;
   --jpt-colour-heading: #262626;
   --jpt-colour-subheading: #404040;
   --jpt-colour-text: #525252;
@@ -13,6 +14,7 @@
   --jpt-max-width: 832px;
 
   /* Fonts */
-  --jpt-font-body: "Geist", sans-serif;
-  --jpt-font-heading: "Geist Mono", monospace;
+  --jpt-font-heading: "Playfair Display", serif;
+  --jpt-font-body: "Source Sans 3", sans-serif;
+  --jpt-font-mono: "Source Code Pro", monospace;
 }

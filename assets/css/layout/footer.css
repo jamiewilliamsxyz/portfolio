@@ -8,6 +8,10 @@ footer {
   width: 100%;
 }
 
+footer a {
+  width: fit-content;
+}
+
 @media (min-width: 800px) {
   footer {
     padding: 2rem;

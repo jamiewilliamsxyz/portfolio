@@ -19,8 +19,8 @@ function jpt_project_link( $url, $text ) {
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'jpt-post' ); ?>>
-	<section>
-		<div class="jpt-post-title-date-container">
+	<section class="jpt-post-hero">
+		<div>
 			<h1><?php the_title(); ?></h1>
 
 			<?php if ( $date ) : ?>
@@ -38,19 +38,19 @@ function jpt_project_link( $url, $text ) {
 		);
 		?>
 
-		<div>
-			<div>
-				<h2>Description</h2>
+		<div class="jpt-project-info">
+			<div class="jpt-project-info-block">
+				<h3>Description</h3>
 				<p><?php the_excerpt(); ?></p>
 			</div>
 
 			<?php
 			if ( ! is_wp_error( $tech_stack ) && ! empty( $tech_stack ) ) :
 				?>
-				<div>
-					<h2>Tech Stack</h2>
+				<div class="jpt-project-info-block">
+					<h3>Tech Stack</h3>
 
-					<ul>
+					<ul class="jpt-project-tech">
 						<?php foreach ( $tech_stack as $tech ) : ?>
 							<li><?php echo esc_html( $tech->name ); ?></li>
 						<?php endforeach; ?>
@@ -60,8 +60,8 @@ function jpt_project_link( $url, $text ) {
 			endif;
 			?>
 
-			<div>
-				<h2>Links</h2>
+			<div class="jpt-project-info-block">
+				<h3>Links</h3>
 				<?php
 				jpt_project_link( $live_url, 'Live Site ↗' );
 				jpt_project_link( $github_url, 'GitHub ↗' );
@@ -69,21 +69,21 @@ function jpt_project_link( $url, $text ) {
 				?>
 			</div>
 		</div>
-
-		<?php
-		get_template_part(
-			'template-parts/project/thumbnail',
-			null,
-			array(
-				'class' => 'jpt-project-thumb-desktop',
-			)
-		);
-		?>
 	</section>
+
+	<?php
+	get_template_part(
+		'template-parts/project/thumbnail',
+		null,
+		array(
+			'class' => 'jpt-project-thumb-desktop',
+		)
+	);
+	?>
 
 	<hr />
 
-	<section>
+	<section class="jpt-project-content">
 		<div><?php echo wp_kses_post( $content ); ?></div>
 	</section>
 </article>
