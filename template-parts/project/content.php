@@ -5,27 +5,27 @@ $github_url   = get_field( 'jpt_github_url' );
 $github_url_2 = get_field( 'jpt_github_url_2' );
 $live_url     = get_field( 'jpt_live_url' );
 $content      = get_field( 'jpt_content' );
-$thumb_id     = get_post_thumbnail_id();
-$thumb_url    = get_the_post_thumbnail_url( $thumb_id, 'full' );
-$thumb_alt    = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'jpt-post' ); ?>>
 	<section>
-		<div>
+		<div class="jpt-post-title-date-container">
 			<h1><?php the_title(); ?></h1>
 
 			<?php if ( $date ) : ?>
-				<p><?php echo esc_html( $date ); ?></p>
+				<p class="jpt-subtext"><?php echo esc_html( $date ); ?></p>
 			<?php endif; ?>
 		</div>
 
-		<?php if ( $thumb_url ) : ?>
-			<img
-			class="jpt-project-thumb-mobile"
-			src="<?php echo esc_url( $thumb_url ); ?>"
-			alt="<?php echo esc_attr( $thumb_alt ); ?>"
-			/>
+		<?php if ( has_post_thumbnail() ) : ?>
+			<?php
+			the_post_thumbnail(
+				'full',
+				array(
+					'class' => 'jpt-project-thumb-mobile',
+				)
+			);
+			?>
 		<?php endif; ?>
 
 		<div>
@@ -33,6 +33,7 @@ $thumb_alt    = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
 				<h2>Description</h2>
 				<p><?php the_excerpt(); ?></p>
 			</div>
+
 
 			<?php
 			if ( ! is_wp_error( $tech_stack ) && ! empty( $tech_stack ) ) :
@@ -71,12 +72,15 @@ $thumb_alt    = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
 			</div>
 		</div>
 
-		<?php if ( $thumb_url ) : ?>
-			<img
-			class="jpt-project-thumb-desktop"
-			src="<?php echo esc_url( $thumb_url ); ?>"
-			alt="<?php echo esc_attr( $thumb_alt ); ?>"
-			/>
+		<?php if ( has_post_thumbnail() ) : ?>
+			<?php
+			the_post_thumbnail(
+				'full',
+				array(
+					'class' => 'jpt-project-thumb-desktop',
+				)
+			);
+			?>
 		<?php endif; ?>
 	</section>
 

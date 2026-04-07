@@ -27,6 +27,7 @@ main {
   padding: 2rem 0;
   max-width: var(--jpt-max-width);
   margin: 0 auto;
+  width: 100%;
 }
 
 img {
