@@ -5,6 +5,17 @@ $github_url   = get_field( 'jpt_github_url' );
 $github_url_2 = get_field( 'jpt_github_url_2' );
 $live_url     = get_field( 'jpt_live_url' );
 $content      = get_field( 'jpt_content' );
+
+function jpt_project_link( $url, $text ) {
+	if ( ! $url ) {
+		return;
+	}
+	?>
+	<a href="<?php echo esc_url( $url ); ?>" target="_blank" rel="noopener">
+		<?php echo esc_html( $text ); ?>
+	</a>
+	<?php
+}
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'jpt-post' ); ?>>
@@ -51,22 +62,11 @@ $content      = get_field( 'jpt_content' );
 
 			<div>
 				<h2>Links</h2>
-				<?php if ( $live_url ) : ?>
-					<a href="<?php echo esc_url( $live_url ); ?>" target="_blank" rel="noopener">
-						Live Site ↗
-					</a>
-				<?php endif; ?>
-
-				<!-- Required field. No need to conditionally render link or links section -->
-				<a href="<?php echo esc_url( $github_url ); ?>" target="_blank" rel="noopener">
-					GitHub ↗
-				</a>
-
-				<?php if ( $github_url_2 ) : ?>
-					<a href="<?php echo esc_url( $github_url_2 ); ?>" target="_blank" rel="noopener">
-						GitHub 2 ↗
-					</a>
-				<?php endif; ?>
+				<?php
+				jpt_project_link( $live_url, 'Live Site ↗' );
+				jpt_project_link( $github_url, 'GitHub ↗' );
+				jpt_project_link( $github_url_2, 'GitHub 2 ↗' );
+				?>
 			</div>
 		</div>
 
