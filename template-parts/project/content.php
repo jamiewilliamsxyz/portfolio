@@ -39,7 +39,7 @@ function jpt_project_link( $url, $text ) {
 		?>
 
 		<div class="jpt-project-info">
-			<div class="jpt-project-info-block">
+			<div class="jpt-project-info-block jpt-fade-in-up">
 				<h3>Description</h3>
 				<p><?php the_excerpt(); ?></p>
 			</div>
@@ -47,7 +47,7 @@ function jpt_project_link( $url, $text ) {
 			<?php
 			if ( ! is_wp_error( $tech_stack ) && ! empty( $tech_stack ) ) :
 				?>
-				<div class="jpt-project-info-block">
+				<div class="jpt-project-info-block jpt-fade-in-up">
 					<h3>Tech Stack</h3>
 
 					<ul class="jpt-project-tech">
@@ -60,7 +60,7 @@ function jpt_project_link( $url, $text ) {
 			endif;
 			?>
 
-			<div class="jpt-project-info-block">
+			<div class="jpt-project-info-block jpt-fade-in-up">
 				<h3>Links</h3>
 				<?php
 				jpt_project_link( $live_url, 'Live Site ↗' );
