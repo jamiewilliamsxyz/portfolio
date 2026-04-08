@@ -51,6 +51,15 @@
 .jpt-about-subsection-content a {
   font-size: 1.15rem;
   color: var(--jpt-colour-text);
+
+  &:hover {
+    background-size: 0;
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .jpt-my-story-content {
