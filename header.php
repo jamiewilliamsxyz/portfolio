@@ -15,7 +15,7 @@
 			<?php if ( is_front_page() ) : ?>
 				<h1>Jamie Williams <span class="jpt-heading-emoji">💻</span></h1>
 			<?php else : ?>
-				<p class="jpt-header-title"><?php bloginfo( 'name' ); ?></p>
+				<p class="jpt-header-title">Jamie Williams <span class="jpt-heading-emoji">💻</span></p>
 			<?php endif; ?>
 
 			<p>WordPress & frontend developer</p>
