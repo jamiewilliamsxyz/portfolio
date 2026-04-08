@@ -1,6 +1,6 @@
 <?php $education = jpt_get_about_data( 'education' ); ?>
 
-<div class="jpt-about-subsection">
+<div class="jpt-about-subsection jpt-fade-in-left">
 	<h3>Education</h3>
 
 	<?php foreach ( $education as $item ) : ?>

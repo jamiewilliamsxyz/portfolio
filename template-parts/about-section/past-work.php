@@ -1,6 +1,6 @@
 <?php $past_work = jpt_get_about_data( 'past-work' ); ?>
 
-<div class="jpt-about-subsection">
+<div class="jpt-about-subsection jpt-fade-in-left">
 	<h3>Past Work</h3>
 
 	<?php foreach ( $past_work['items'] as $item ) : ?>

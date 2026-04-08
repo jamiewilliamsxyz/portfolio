@@ -65,10 +65,13 @@
 }
 
 .jpt-card {
+  padding: 1.5rem 0 1rem 0;
+}
+
+.jpt-card-content-wrapper {
   display: flex;
   flex-direction: column;
   gap: 0.375rem;
-  padding: 1.5rem 0 1rem 0;
 }
 
 .jpt-card:first-child {
@@ -91,13 +94,13 @@
   gap: 2rem;
 }
 
-.jpt-card > ul {
+.jpt-card-content-wrapper > ul {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
 
-.jpt-card > a {
+.jpt-card-content-wrapper > a {
   font-size: 1.15rem;
   margin-top: 0.5rem;
   width: fit-content;

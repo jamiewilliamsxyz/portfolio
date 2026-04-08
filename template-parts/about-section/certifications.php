@@ -1,6 +1,6 @@
 <?php $certifications = jpt_get_about_data( 'certifications' ); ?>
 
-<div class="jpt-about-subsection">
+<div class="jpt-about-subsection jpt-fade-in-left">
 	<h3>Certifications</h3>
 
 	<?php foreach ( $certifications['items'] as $certification ) : ?>

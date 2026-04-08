@@ -56,4 +56,12 @@ function jpt_enqueue_scripts() {
 			$version
 		);
 	}
+
+	wp_enqueue_script(
+		'jpt-animate-css',
+		$template_uri . '/assets/js/animate.js',
+		array(),
+		$version,
+		true // Remove if animations are delayed on page load
+	);
 }
