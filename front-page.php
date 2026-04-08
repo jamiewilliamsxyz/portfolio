@@ -11,7 +11,7 @@ $projects = new WP_Query(
 
 <main class="jpt-front-page">
 	<section>
-		<h2>About Me 👨‍💻</h2>
+		<h2>About Me <span class="jpt-heading-emoji">👨‍💻</span></h2>
 
 		<div class="jpt-about-container">
 			<?php get_template_part( 'template-parts/about-section/my-story' ); ?>
@@ -30,7 +30,7 @@ $projects = new WP_Query(
 	<?php if ( $projects->have_posts() ) : ?>
 		<hr />
 		<section>
-			<h2>Projects ✨</h2>
+			<h2>Projects <span class="jpt-heading-emoji">📂</span></h2>
 
 			<div>
 				<?php

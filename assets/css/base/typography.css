@@ -123,3 +123,8 @@ kbd {
   padding: 0.125rem 0.375rem;
   margin: 0 0.125rem;
 }
+
+.jpt-heading-emoji {
+  font-size: 95%;
+  margin-left: 0.25rem;
+}

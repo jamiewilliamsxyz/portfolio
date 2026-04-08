@@ -13,12 +13,12 @@
 
 		<div class="jpt-header-col">
 			<?php if ( is_front_page() ) : ?>
-				<h1><?php bloginfo( 'name' ); ?></h1>
+				<h1>Jamie Williams <span class="jpt-heading-emoji">💻</span></h1>
 			<?php else : ?>
 				<p class="jpt-header-title"><?php bloginfo( 'name' ); ?></p>
 			<?php endif; ?>
 
-			<p><?php bloginfo( 'description' ); ?></p>
+			<p>WordPress & frontend developer</p>
 
 			<nav>
 				<?php
