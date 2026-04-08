@@ -20,6 +20,19 @@ header {
   border: 1px solid var(--jpt-colour-muted);
 }
 
+a.custom-logo-link {
+  transition: opacity 200ms ease;
+
+  &:hover {
+    background-size: 0;
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
 .jpt-header-col {
   display: flex;
   flex-direction: column;

@@ -9,6 +9,7 @@
   --jpt-colour-muted: #a3a3a3;
   --jpt-colour-subdivider: #d1d1d1;
   --jpt-colour-link: #3b52a4;
+  --jpt-colour-link-underline: #3b52a4cc;
 
   /* Layout */
   --jpt-max-width: 832px;

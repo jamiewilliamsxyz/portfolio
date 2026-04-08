@@ -12,15 +12,25 @@ body {
 a {
   text-decoration: none;
   color: var(--jpt-colour-link);
-  transition: opacity 300ms ease;
   font-size: 1.025rem;
+  background-image: linear-gradient(
+    var(--jpt-colour-link-underline),
+    var(--jpt-colour-link-underline)
+  );
+  background-size: 0% 1px;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  transition:
+    background-size 200ms ease-in-out,
+    opacity 200ms ease;
 
   &:hover {
-    opacity: 0.7;
+    background-size: 100% 1px;
   }
 
   &:active {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 }
 
