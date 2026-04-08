@@ -6,6 +6,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action( 'wp_enqueue_scripts', 'jpt_enqueue_scripts' );
 
 function jpt_enqueue_scripts() {
+	// Deregister jQuery
+	wp_deregister_script( 'jquery' );
+
 	$version      = wp_get_theme()->get( 'Version' );
 	$template_uri = get_template_directory_uri();
 
