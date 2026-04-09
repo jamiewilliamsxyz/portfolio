@@ -6,12 +6,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action( 'wp_enqueue_scripts', 'jpt_enqueue_scripts' );
 
 function jpt_enqueue_scripts() {
-	// Deregister jQuery
-	wp_deregister_script( 'jquery' );
-
 	$version      = wp_get_theme()->get( 'Version' );
 	$template_uri = get_template_directory_uri();
 
+	// Deregister jQuery
+	wp_deregister_script( 'jquery' );
+
+	// Dequeue Gutenberg Styles
+	wp_dequeue_style( 'wp-block-library' );
+	wp_dequeue_style( 'wp-block-library-theme' );
+	wp_dequeue_style( 'global-styles' );
+
+	// CSS Styles
 	wp_enqueue_style(
 		'jpt-style-css',
 		get_stylesheet_uri(),
@@ -19,7 +25,6 @@ function jpt_enqueue_scripts() {
 		$version
 	);
 
-	// CSS Styles
 	wp_enqueue_style(
 		'jpt-global-css',
 		$template_uri . '/assets/css/base/global.css',
