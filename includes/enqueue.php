@@ -61,7 +61,7 @@ function jpt_enqueue_scripts() {
 	}
 
 	wp_enqueue_script(
-		'jpt-animate-css',
+		'jpt-animate-js',
 		$template_uri . '/assets/js/animate.js',
 		array(),
 		$version,
