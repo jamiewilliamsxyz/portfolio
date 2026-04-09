@@ -17,7 +17,7 @@ return array(
 	'past-work'        => array(
 		'items' => array(
 			array(
-				'role'  => 'Website Support - Nokmis',
+				'role'  => 'Website Support - Nokomis',
 				'dates' => 'Jan 2024 - Present',
 			),
 			array(
