@@ -1,12 +1,7 @@
 <?php
 get_header();
 
-$projects = new WP_Query(
-	array(
-		'post_type'      => 'jpt_project',
-		'posts_per_page' => -1,
-	)
-);
+$projects = jpt_get_projects() ?? null;
 ?>
 
 <main>
