@@ -20,6 +20,8 @@ function jpt_project_link( $url, $text ) {
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'jpt-post' ); ?>>
 	<section class="jpt-post-hero">
+		<a class="jpt-project-back-home-link" href="<?php echo esc_url( get_home_url() ); ?>">← Home</a>
+
 		<div>
 			<h1><?php the_title(); ?></h1>
 
