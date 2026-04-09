@@ -33,7 +33,7 @@ function jpt_enqueue_scripts() {
 		null
 	);
 
-	if ( is_single() ) {
+	if ( is_singular() ) {
 		wp_enqueue_style(
 			'jpt-google-fonts-mono',
 			'https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap',
@@ -51,7 +51,7 @@ function jpt_enqueue_scripts() {
 		);
 	}
 
-	if ( is_single() ) {
+	if ( is_singular() ) {
 		wp_enqueue_style(
 			'jpt-single-css',
 			$template_uri . '/assets/css/pages/single.css',
