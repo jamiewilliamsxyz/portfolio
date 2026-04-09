@@ -109,11 +109,6 @@
   padding-left: 2rem;
 }
 
-.jpt-project-content .wp-caption-text {
-  margin-top: 1rem;
-  text-align: center;
-}
-
 .jpt-project-content a {
   font-size: 1.15rem;
 }
@@ -132,13 +127,13 @@
 }
 
 .jpt-project-content .wp-caption {
-  min-width: 100%;
   max-width: fit-content;
   margin-bottom: 2rem;
 }
 
-.jpt-project-content .wp-caption img {
-  width: 100%;
+.jpt-project-content .wp-caption-text {
+  margin-top: 1rem;
+  text-align: center;
 }
 
 @media (min-width: 800px) {
