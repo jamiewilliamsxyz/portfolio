@@ -1,9 +1,0 @@
-/* Base */
-@import "base/global.css";
-@import "base/variables.css";
-@import "base/typography.css";
-@import "base/animations.css";
-
-/* Layout */
-@import "layout/header.css";
-@import "layout/footer.css";

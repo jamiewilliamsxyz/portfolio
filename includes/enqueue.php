@@ -19,13 +19,50 @@ function jpt_enqueue_scripts() {
 		$version
 	);
 
+	// CSS Styles
 	wp_enqueue_style(
-		'jpt-main-css',
-		$template_uri . '/assets/css/main.css',
+		'jpt-global-css',
+		$template_uri . '/assets/css/base/global.css',
 		array(),
 		$version
 	);
 
+	wp_enqueue_style(
+		'jpt-variables-css',
+		$template_uri . '/assets/css/base/variables.css',
+		array(),
+		$version
+	);
+
+	wp_enqueue_style(
+		'jpt-typography-css',
+		$template_uri . '/assets/css/base/typography.css',
+		array(),
+		$version
+	);
+
+	wp_enqueue_style(
+		'jpt-animations-css',
+		$template_uri . '/assets/css/base/animations.css',
+		array(),
+		$version
+	);
+
+	wp_enqueue_style(
+		'jpt-header-css',
+		$template_uri . '/assets/css/layout/header.css',
+		array(),
+		$version
+	);
+
+	wp_enqueue_style(
+		'jpt-footer-css',
+		$template_uri . '/assets/css/layout/footer.css',
+		array(),
+		$version
+	);
+
+	// Google Fonts
 	wp_enqueue_style(
 		'jpt-google-fonts',
 		'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap',
@@ -42,6 +79,7 @@ function jpt_enqueue_scripts() {
 		);
 	}
 
+	// Page Styles
 	if ( is_front_page() ) {
 		wp_enqueue_style(
 			'jpt-front-page-css',
@@ -69,6 +107,7 @@ function jpt_enqueue_scripts() {
 		);
 	}
 
+	// JavaScript
 	wp_enqueue_script(
 		'jpt-animate-js',
 		$template_uri . '/assets/js/animate.js',
