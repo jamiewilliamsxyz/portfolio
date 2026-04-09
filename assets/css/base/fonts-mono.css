@@ -1,0 +1,54 @@
+/* Source Code Pro */
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../fonts/source-code-pro/SourceCodePro-Regular.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../fonts/source-code-pro/SourceCodePro-Italic.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../../fonts/source-code-pro/SourceCodePro-Medium.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../../fonts/source-code-pro/SourceCodePro-MediumItalic.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../../fonts/source-code-pro/SourceCodePro-SemiBold.woff2)
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Source Code Pro";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../../fonts/source-code-pro/SourceCodePro-SemiBoldItalic.woff2)
+    format("woff2");
+}

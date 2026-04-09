@@ -62,20 +62,20 @@ function jpt_enqueue_scripts() {
 		$version
 	);
 
-	// Google Fonts
+	// Fonts
 	wp_enqueue_style(
-		'jpt-google-fonts',
-		'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap',
+		'jpt-fonts',
+		$template_uri . '/assets/css/base/fonts.css',
 		array(),
-		null
+		$version
 	);
 
 	if ( is_singular() ) {
 		wp_enqueue_style(
-			'jpt-google-fonts-mono',
-			'https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap',
+			'jpt-fonts-mono',
+			$template_uri . '/assets/css/base/fonts-mono.css',
 			array(),
-			null
+			$version
 		);
 	}
 
