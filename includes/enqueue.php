@@ -67,23 +67,6 @@ function jpt_enqueue_scripts() {
 		$version
 	);
 
-	// Fonts
-	wp_enqueue_style(
-		'jpt-fonts',
-		$template_uri . '/assets/css/base/fonts.css',
-		array(),
-		$version
-	);
-
-	if ( is_singular() ) {
-		wp_enqueue_style(
-			'jpt-fonts-mono',
-			$template_uri . '/assets/css/base/fonts-mono.css',
-			array(),
-			$version
-		);
-	}
-
 	// Page Styles
 	if ( is_front_page() ) {
 		wp_enqueue_style(
