@@ -22,8 +22,8 @@ a {
   background-position-x: 0%;
   background-repeat: no-repeat;
   transition:
-    background-size 200ms ease-in-out,
-    opacity 200ms ease;
+    background-size 175ms ease-in-out,
+    opacity 175ms ease;
 
   &:hover {
     background-size: 100% 1px;

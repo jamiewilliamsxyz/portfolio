@@ -21,7 +21,7 @@ header {
 }
 
 a.custom-logo-link {
-  transition: opacity 200ms ease;
+  transition: opacity 175ms ease;
 
   &:hover {
     background-size: 0;

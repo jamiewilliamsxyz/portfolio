@@ -114,7 +114,7 @@
 }
 
 .jpt-project-content a {
-  transition: opacity 200ms ease;
+  transition: opacity 175ms ease;
 
   &:hover {
     background-size: 0;
