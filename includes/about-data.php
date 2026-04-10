@@ -62,7 +62,7 @@ return array(
 		array(
 			'title' => 'Level 3 Extended Diploma in Computing - WCG Rugby College',
 			'dates' => 'Sep 2023 - Jun 2025',
-			'link'  => '',
+			'link'  => 'https://jamiewilliams.me/wp-content/uploads/2026/04/Computing-Certificate.pdf',
 		),
 	),
 
