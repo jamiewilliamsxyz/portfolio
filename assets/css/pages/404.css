@@ -12,3 +12,7 @@
 .jpt-content-404 > h1 {
   margin-bottom: 1rem;
 }
+
+.jpt-content-404 a {
+  width: fit-content;
+}
