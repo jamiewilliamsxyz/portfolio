@@ -9,9 +9,6 @@ function jpt_enqueue_scripts() {
 	$version      = wp_get_theme()->get( 'Version' );
 	$template_uri = get_template_directory_uri();
 
-	// Deregister jQuery
-	wp_deregister_script( 'jquery' );
-
 	// Dequeue Gutenberg Styles
 	wp_dequeue_style( 'wp-block-library' );
 	wp_dequeue_style( 'wp-block-library-theme' );
