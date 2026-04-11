@@ -75,21 +75,22 @@
 }
 
 .jpt-project-content h2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .jpt-project-content h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.65rem;
+  margin-top: 2.15rem;
 }
 
 .jpt-project-content p,
 .jpt-project-content ul,
 .jpt-project-content ol {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .jpt-project-content li {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .jpt-project-content li:last-child {
