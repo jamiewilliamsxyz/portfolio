@@ -47,14 +47,6 @@ Animation classes are defined in `animations.css` and toggled in `animate.js`. I
 - **Enqueued Stylesheets > `@import`:** Instead of importing all styles into `main.css` with `@import` (which has known performance issues), I enqueued each stylesheet in `enqueue.php`
 - **Image Optimisation:** I converted PNGs to WebPs, this reduces file sizes. Post thumbnails use `loading="eager"`, `fetchpriority="high"` and `decoding="sync"` to prioritise loading since it's above the fold
 
-#### 📋 Lighthouse Summary
-
-<img src="./assets/images/lighthouse-summary.png" alt="Lighthouse results" width="350px" />
-
-#### 📊 Core Web Vitals
-
-<img src="./assets/images/core-web-vitals.png" alt="Core web vitals" width="350px" />
-
 ## ⚠️ Challenges
 
 ### 🔤 Font Flickering
@@ -98,9 +90,6 @@ Since this is a theme for my personal portfolio site and not a client project, I
 
 <img src="./assets/images/front-page.png" alt="Front page" width="100%" />
 
-### 🎥 Front Page GIF
-
-<img src="./assets/images/front-page.gif" alt="Front page animation" width="350px" />
-
 ### 📰 Single Project Post
+
 <img src="./assets/images/single.png" alt="Single project page" width="100%" />
