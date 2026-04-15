@@ -41,34 +41,41 @@ function jpt_project_link( $url, $text ) {
 		?>
 
 		<div class="jpt-project-info">
-			<div class="jpt-project-info-block jpt-fade-in-up">
-				<h3>Description</h3>
-				<p><?php the_excerpt(); ?></p>
+			<div class="jpt-observe">
+				<div class="jpt-project-info-block jpt-fade-in-up">
+					<h3>Description</h3>
+					<p><?php the_excerpt(); ?></p>
+				</div>
 			</div>
+
 
 			<?php
 			if ( ! is_wp_error( $tech_stack ) && ! empty( $tech_stack ) ) :
 				?>
-				<div class="jpt-project-info-block jpt-fade-in-up">
-					<h3>Tech Stack</h3>
+				<div class="jpt-observe">
+					<div class="jpt-project-info-block jpt-fade-in-up">
+						<h3>Tech Stack</h3>
 
-					<ul class="jpt-project-tech">
-						<?php foreach ( $tech_stack as $tech ) : ?>
-							<li><?php echo esc_html( $tech->name ); ?></li>
-						<?php endforeach; ?>
-					</ul>
+						<ul class="jpt-project-tech">
+							<?php foreach ( $tech_stack as $tech ) : ?>
+								<li><?php echo esc_html( $tech->name ); ?></li>
+							<?php endforeach; ?>
+						</ul>
+					</div>
 				</div>
 				<?php
 			endif;
 			?>
 
-			<div class="jpt-project-info-block jpt-fade-in-up">
-				<h3>Links</h3>
-				<?php
-				jpt_project_link( $live_url, 'Live Site ↗' );
-				jpt_project_link( $github_url, 'GitHub ↗' );
-				jpt_project_link( $github_url_2, 'GitHub 2 ↗' );
-				?>
+			<div class="jpt-observe">
+				<div class="jpt-project-info-block jpt-fade-in-up">
+					<h3>Links</h3>
+					<?php
+					jpt_project_link( $live_url, 'Live Site ↗' );
+					jpt_project_link( $github_url, 'GitHub ↗' );
+					jpt_project_link( $github_url_2, 'GitHub 2 ↗' );
+					?>
+				</div>
 			</div>
 		</div>
 	</section>
