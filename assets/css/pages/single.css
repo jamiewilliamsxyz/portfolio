@@ -53,6 +53,11 @@
   white-space: nowrap;
 }
 
+.jpt-project-info .jpt-observe {
+  width: fit-content;
+  height: fit-content;
+}
+
 .jpt-project-info-block {
   width: fit-content;
 }
