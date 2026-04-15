@@ -34,16 +34,7 @@
 .jpt-project-thumb-mobile,
 .jpt-project-thumb-desktop {
   width: 100%;
-  object-fit: cover;
-  object-position: center top;
-}
-
-.jpt-project-thumb-desktop {
-  height: 432px;
-}
-
-.jpt-project-thumb-mobile {
-  max-height: 365px;
+  height: auto;
 }
 
 .jpt-project-info {
