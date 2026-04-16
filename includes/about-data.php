@@ -9,9 +9,11 @@ if ( ! is_front_page() ) {
 
 return array(
 	'my-story'         => array(
-		"Hi, I'm Jamie - a WordPress and frontend developer from Rugby, England. I began learning web development through self-taught projects while studying Computing at college. After finishing college, I chose to continue developing my skills independently while building practical projects. Over time, I shifted my focus from React development to WordPress, where I found my niche.",
-		"I mainly focus on <strong>maintaining, managing and developing WordPress sites, themes and plugins</strong>. I have experience creating themes, plugins and custom Gutenberg blocks from scratch. I'm also familiar with key WordPress plugins, including Advanced Custom Fields (ACF) and WooCommerce.",
-		"I've supported and maintained a live website, built landing pages for marketing campaigns and worked with Google Analytics. This has given me practical experience contributing to real-world projects. At the moment, I'm focused on improving and expanding my WordPress developer skills and securing a full-time role where I can contribute to production-level websites.",
+		"Hi, I'm Jamie - a <strong>Junior WordPress Developer</strong> based in Warwickshire, England, specialising in <strong>developing custom themes and plugins from scratch</strong>.",
+		"I got into web development while studying Computing at college, learning through self-directed projects. Over time, I moved from React web development into a WordPress-focused stack, where I've been building custom themes, plugins and Gutenberg blocks using PHP, JavaScript, HTML and CSS.",
+		'I have experience with <strong>ACF, WooCommerce, RankMath</strong> and other key plugins used in real-world projects. I also have practical experience building and managing sites on platforms such as GoHighLevel and Framer, including setting up Google Analytics for tracking and reporting.',
+		'I design my projects in Figma and enjoy the problem-solving side of development, particularly <strong>performance and SEO optimisation</strong>.',
+		"I'm currently looking for a Junior WordPress Developer role where I can contribute to real client work and continue developing my skills.",
 	),
 
 	'past-work'        => array(
@@ -69,6 +71,7 @@ return array(
 	'skills-and-tools' => array(
 		'WordPress',
 		'JavaScript',
+		'PHP',
 		'HTML/CSS',
 		'Tailwind',
 		'ACF',
