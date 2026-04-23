@@ -76,6 +76,7 @@ return array(
 		'Tailwind',
 		'ACF',
 		'WooCommerce',
+		'Elementor',
 		'React',
 		'Git/GitHub',
 		'Figma',
