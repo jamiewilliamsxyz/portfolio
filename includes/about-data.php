@@ -30,7 +30,7 @@ return array(
 
 		'link'  => array(
 			'text' => 'Download CV ↗',
-			'href' => '',
+			'href' => 'https://jamiewilliams.me/wp-content/uploads/2026/04/CV.pdf',
 		),
 	),
 
